@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: varandri <varandri@student.42.fr>          +#+  +:+       +#+        */
+/*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 08:18:59 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/20 08:19:04 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/20 15:23:08 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int n)
 {
