@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 15:41:48 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/21 16:29:55 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/21 17:13:03 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	i;
 
 	sb = (char *)malloc (sizeof(char) * len);
-	if (!sb)
+	if (!sb || !s)
 		return (NULL);
 	i = 0;
 	while (len --)
@@ -35,10 +35,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 // int	main(void)
 // {
-// 	char t[11]= "hello world";
+// 	char t[5]="hell";
 
 // 	char *sb;
-// 	sb = ft_substr(t , 25 , 0);
+// 	sb = ft_substr(t , 1 , 3);
 // 	printf("'%s' \n" , sb);
 // 	return (0);
 // }
