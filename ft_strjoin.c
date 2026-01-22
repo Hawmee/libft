@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 08:46:52 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/22 09:56:15 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/22 10:05:20 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 // 	char *c1 = NULL;
 // 	char *c2 = NULL;
-	
+
 // 	printf("%s" , ft_strjoin(c1, c2));
 // 	return (0);
 // }
