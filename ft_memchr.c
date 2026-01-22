@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 15:48:58 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/22 13:37:47 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/22 15:05:19 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 			return ((str + i));
 		i ++;
 	}
-	return (NULL);  
+	return (NULL);
 }
 
 // #include <stdio.h>
