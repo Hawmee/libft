@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 15:48:58 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/21 16:43:39 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/22 09:42:45 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,20 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	if (n <= ft_strlen(s))
-		ft_bzero((char *)(s + (int)n), 1);
-	return (ft_strchr((char *)s, c));
+	size_t	i;
+	char	*str;
+
+	i = 0;
+	str = (char *)s;
+	if (c == '\0')
+		return (str + (ft_strlen(s)));
+	while (i < n)
+	{
+		if (*(str + i) == c)
+			return ((str + i));
+		i ++;
+	}
+	return (NULL);
 }
 
 // #include <stdio.h>
@@ -24,8 +35,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 // int main()
 // {
 //     char test[20] = "hello world";
-//     printf ("%p \n" , ft_memchr(test , 'w' , 100));
-// 	printf ("%p \n" , memchr(test , 'w' , 100));
-// 	printf ("%p" , &test[6]);
+// 	// char *test = NULL;
+//     printf ("%s \n" , (char *)ft_memchr(test , 'w' , 0));
+// 	printf ("%s \n" , (char *)memchr(test , 'w' , 0));
 //     return (0);
 // }
