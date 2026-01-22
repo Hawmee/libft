@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 14:10:47 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/20 14:49:15 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/22 09:35:33 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,22 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	unsigned char	*str;
-	size_t			i;
-
-	str = (unsigned char *)s;
-	i = 0;
-	while (i < n)
-	{
-		*(str + i) = '\0';
-		i ++;
-	}
+	ft_memset((unsigned char *)s , 0 , n);
 }
 
-/*#include <stdio.h>
+// #include <stdio.h>
+// #include <strings.h>
+// #include <bsd/string.h>
 
-int	main(void)
-{
-	char c[12]= "hello_mf" ;
-    ft_bzero(&c[2] , 1);
-    printf("%s",c);
-	return (0);
-}*/
+// int	main(void)
+// {
+// 	char c[12]= "aaaaaaaa" ;
+	
+//     bzero(&c[2] , 1);
+//     int i;
+// 	for(i = 0 ; i < (int)ft_strlen(c)*(int)sizeof(int) ; i ++)
+// 	{
+// 		printf("%i" , c[i]);
+// 	}
+// 	return (0);
+// }
