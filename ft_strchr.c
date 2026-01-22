@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 08:19:49 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/20 14:52:44 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/22 10:04:13 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int		i;
+	size_t	i;
 	char	*str;
 
 	i = 0;
@@ -36,7 +36,8 @@ char	*ft_strchr(const char *s, int c)
 // int main()
 // {
 //     char test[5] = "test";
-//     printf("%p \n" , ft_strchr(test , 't'));
-//     printf("%p" , &test[0]);
+//     printf("%s \n" , (char *)ft_strchr(test , 'e'));
+// 	printf("%s \n" , (char *)strchr(test , 'e'));
+// 	printf("%s" , &test[1]);
 //     return (0);
 // }
