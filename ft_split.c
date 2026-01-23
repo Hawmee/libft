@@ -6,12 +6,11 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 15:20:36 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/23 15:20:42 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/24 01:15:40 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	ft_count_word(char const *s, char c)
 {

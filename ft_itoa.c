@@ -6,12 +6,11 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 15:45:33 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/24 01:07:57 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/24 01:15:00 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	ft_int_len(int n)
 {
