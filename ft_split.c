@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 15:20:36 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/24 01:15:40 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/24 08:12:11 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	res = (char **)malloc ((ft_count_word(s, c) * sizeof(char *)) + 1);
+	res = (char **)malloc (((ft_count_word(s, c) + 1) * sizeof(char *)));
 	if (!res)
 		return (NULL);
 	i = 0;
