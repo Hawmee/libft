@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 12:34:16 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/21 12:47:43 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/21 14:11:37 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,10 @@ int	ft_atoi(const char *nptr)
 }
 
 // #include <stdio.h>
+// #include <string.h>
 
 // int main (void)
 // {
-// 	printf("%i" , ft_atoi("       -12a332"));	
+// 	printf("%i" , atoi("       -12a332"));	
 // 	return (0);
 // }

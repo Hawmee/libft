@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 08:19:18 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/20 14:14:20 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/21 11:09:21 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,15 +35,11 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 // int main() {
 
 //     // Initialize a variable
-//     char a[] = "windmill windmill";
-//     char b[] = "for the lanx";
-
-//     printf("Value of b before calling memcpy: %s\n", b);
-
+//     char a[10] = "abcde";
 //     // Use memcpy to copy the value of 'a' into 'b'
-//     ft_memcpy(&b, &a,13 ); 
+//     memcpy(a + 1, a , 5 ); 
 
-//     printf("Value of b after calling memcpy: %s\n", b);
+//     printf("%s \n %s" ,a + 1, a);
 
 //     return 0;
 // }

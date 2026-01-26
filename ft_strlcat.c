@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 08:19:56 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/20 14:57:35 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/23 22:34:19 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 // #include <stdio.h>
 
 // int main() {
-//  	char destin[20] = "Hello";
-// 	char source[20] = ", world!";
-// 	unsigned int result = ft_strlcat(destin, source, 5);
-// 	printf("Result: %s\n", destin);
-// 	printf("Length: %d\n", result);
 // 	return (0);
 // }

@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 09:53:20 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/21 11:08:54 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/23 09:32:40 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,16 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	if (!*(little))
 		return ((char *)big);
-	if (ft_strlen(big) >= len)
-		ft_bzero((char *)(big + (int)len), 1);
 	i = 0;
-	while (*(big + i))
+	while (*(big + i) && i < len)
 	{
 		j = 0;
 		while (*(big + i + j) == *(little + j))
 			j ++;
-		if ((j) == ft_strlen(little))
+		if (!*(little + j))
+		{
 			return ((char *)(big + i));
+		}
 		i ++;
 	}
 	return (NULL);
@@ -43,6 +43,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 // {
 //   char a[21]="hello world";
 //   char b[8]="el";
-//   printf("'%s' \n" ,ft_strnstr(a, b , 15 ));
+//   printf("'%s' \n" ,strnstr(a, b , 5 ));
 //   return 0;
 // }
