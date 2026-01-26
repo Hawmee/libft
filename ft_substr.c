@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 15:41:48 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/26 14:43:44 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/26 18:48:37 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*sb;
 	size_t	i;
 
-	(void) start;
+	if (!s)
+		return (NULL);
 	sb = (char *)malloc (sizeof(char) * (len + 1));
-	if (!sb || !s)
+	if (!sb)
 		return (NULL);
 	i = 0;
 	while (i < len && s[(int)start + (int)i])

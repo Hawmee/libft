@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/24 08:17:31 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/24 08:57:58 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/26 18:34:08 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	size_t	i;
 
+	if (!s || !f)
+		return (NULL);
 	i = 0;
 	while (i < ft_strlen(s))
 	{

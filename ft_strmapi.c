@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/24 07:30:16 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/24 08:12:52 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/26 18:45:59 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*res;
 	size_t	i;
 
+	if (!s || !f)
+		return (NULL);
 	res = (char *)malloc (sizeof(char) * ft_strlen(s));
 	if (!res)
 		return (NULL);

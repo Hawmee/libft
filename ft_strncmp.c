@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 14:21:22 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/20 15:24:00 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/26 18:46:32 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	int	i;
 
+	if (!s1 || !s2)
+		return (0);	
 	i = 0;
 	while (*(s1 + i) && *(s2 + i) && (*(s1 + i) == *(s2 + i)) && n--)
 	{

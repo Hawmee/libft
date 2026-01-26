@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 14:18:25 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/20 14:18:26 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/26 18:47:33 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strrchr(const char *s, int c)
 	char	*str;
 	int		i;
 
+	if (!s)
+		return (NULL);
 	i = 0;
 	str = (char *)s;
 	while (i <= (int)ft_strlen(s))

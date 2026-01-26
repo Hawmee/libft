@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 12:55:18 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/21 13:44:53 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/26 18:32:19 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strdup(const char *s)
 	size_t	i;
 	char	*dup;
 
+	if (!s)
+		return (NULL);
 	i = 0;
 	dup = (char *)malloc(ft_strlen(s) * sizeof(char));
 	if (!dup)
