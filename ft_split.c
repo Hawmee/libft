@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 15:20:36 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/26 14:42:21 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/26 15:24:41 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,6 +97,3 @@ char	**ft_split(char const *s, char c)
 	res[j] = NULL;
 	return (res);
 }
-
-
-

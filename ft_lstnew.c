@@ -6,16 +6,16 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/25 18:48:42 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/25 19:16:29 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/26 15:27:00 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list *ft_lstnew(void *content)
+t_list	*ft_lstnew(void *content)
 {
-    t_list	*list;
-	
+	t_list	*list;
+
 	list = malloc(sizeof(t_list));
 	if (!list)
 		return (NULL);
