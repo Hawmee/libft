@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 08:05:22 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/26 18:27:25 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/27 03:30:13 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_lstsize(t_list *lst)
 	t_list	*tmp;
 
 	if (!lst)
-		return (NULL);
+		return (0);
 	tmp = lst;
 	size = 0;
 	while (tmp)
