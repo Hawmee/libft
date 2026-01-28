@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 08:20:07 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/27 08:26:36 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/28 16:00:05 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,3 @@ size_t	ft_strlen(const char *s)
 	}
 	return (i);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-
-// int	main(void)
-// {
-// 	char *c = NULL;
-// 	printf("strlen = %zu" , strlen(c));
-// 	return (0);
-// }

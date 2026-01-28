@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 14:18:25 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/28 13:37:29 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/28 15:46:34 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-
-// int main()
-// {
-//     char test[5] = "test";
-//     printf("%p \n" , strrchr(test , 'e'));
-//     printf("%p" , &test[1]);
-//     return (0);
-// }

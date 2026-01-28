@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 09:59:48 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/27 19:19:44 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/28 16:06:51 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ static int	is_set(int c, char *set)
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*res;
-	size_t		i;
-	size_t		j;
+	size_t	i;
+	size_t	j;
 
 	if (!s1)
 		return (NULL);
@@ -40,7 +40,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		i ++;
 	while (j > i && set && is_set(s1[j - 1], (char *)set))
 		j --;
-	res = (char *)ft_calloc (((j - i) + 1) , (int) sizeof(char));
+	res = (char *)ft_calloc (((j - i) + 1), (int) sizeof(char));
 	if (!res)
 		return (NULL);
 	ft_memmove((char *)res, (char *)(s1 + i), (j - i));

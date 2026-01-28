@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 15:41:48 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/28 07:51:03 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/28 16:05:53 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,18 +33,5 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		*(sb + i) = (char)(*((char *)(s + (int)start + (int)i)));
 		i ++;
 	}
-	// sb[len] = '\0';
 	return (sb);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	char t[30]="hello world mf";
-
-// 	char *sb;
-// 	sb = ft_substr(t , 6 , 5);
-// 	printf("'%s' \n" , sb);
-// 	return (0);
-// }

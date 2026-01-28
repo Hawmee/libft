@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 14:21:22 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/28 17:32:18 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/28 16:02:20 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		i ++;
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
-

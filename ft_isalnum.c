@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 08:18:09 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/20 15:22:54 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/28 15:59:21 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,17 +20,3 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-
-/*#include <stdio.h>
-
-int main (void)
-{
-	char c;
-
-	c = ' ';
-	if (ft_isalnum(c))
-		printf("alnum");
-	else
-		printf("non alnum");
-	return (0);
-}*/

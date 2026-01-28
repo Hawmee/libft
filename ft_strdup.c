@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 12:55:18 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/27 15:32:08 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/28 15:45:54 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,13 +31,3 @@ char	*ft_strdup(const char *s)
 	*(dup + i) = '\0';
 	return (dup);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-
-// int	main (void)
-// {
-// 	char s[12]= "hello_wrld";
-// 	printf("%s" , strdup(s));
-// 	return (0);
-// }

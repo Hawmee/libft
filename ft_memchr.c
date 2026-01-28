@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 15:48:58 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/28 13:25:47 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/28 15:45:00 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-// int main()
-// {
-//     char test[20] = "hello\0world";
-// 	// char *test = NULL;
-//     printf ("%s \n" , (char *)ft_memchr(test , '\0' ,95));
-// 	printf ("%s \n" , (char *)memchr(test , '\0' , 95));
-//     return (0);
-// }

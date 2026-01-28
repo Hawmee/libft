@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 08:19:56 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/27 03:31:10 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/28 16:01:55 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	*(dst + dst_len + i) = '\0';
 	return (dst_len + src_len);
 }
-
-// #include <stdio.h>
-
-// int main() {
-// 	return (0);
-// }

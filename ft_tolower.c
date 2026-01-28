@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 08:20:13 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/20 14:13:16 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/28 15:46:46 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,3 @@ int	ft_tolower(int c)
 		c += 32;
 	return (c);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	printf("%c" , ft_tolower('e'));
-// 	return (0);
-// }

@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 15:20:36 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/28 10:58:56 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/28 16:10:03 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static size_t	ft_len_word(char const *s, char c)
 	while (s[i])
 	{
 		j = 0;
-		while (s[i + j] && s[i + j] != c )
+		while (s[i + j] && s[i + j] != c)
 			j ++;
 		if (!j)
 			i ++;
@@ -47,7 +47,8 @@ static int	ft_word_count(char const *s, char c)
 			j ++;
 		if (!j)
 			i ++;
-		else{
+		else
+		{
 			count ++;
 			i = i + j;
 		}
@@ -83,7 +84,7 @@ char	**ft_split(char const *s, char c)
 	j = 0;
 	while ((int)i < ft_word_count(s, c))
 	{
-		while(s[j] && s[j] == c)
+		while (s[j] && s[j] == c)
 			j ++;
 		res[i] = ft_substr(s, j, ft_len_word(&s[j], c));
 		if (!res[i])

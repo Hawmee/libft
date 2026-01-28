@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 08:19:49 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/26 18:31:56 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/28 16:02:03 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (NULL);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-
-// int main()
-// {
-
-//     return (0);
-// }

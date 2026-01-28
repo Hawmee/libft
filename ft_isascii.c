@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 08:18:52 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/20 15:23:03 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/28 15:59:30 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,3 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
-
-/*#include <stdio.h>
-
-int	main (void)
-{
-	if (ft_isascii('ç'))
-		printf("ascii");
-	else
-		printf("non ascii");
-	return (0);
-}*/

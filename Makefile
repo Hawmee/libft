@@ -6,14 +6,14 @@
 #    By: varandri <varandri@student.42antananari    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/26 16:13:49 by varandri          #+#    #+#              #
-#    Updated: 2026/01/27 15:17:27 by varandri         ###   ########.fr        #
+#    Updated: 2026/01/28 16:13:57 by varandri         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 EXEC = a.out
 CC = cc
-CFLAGS = -Wall -Werror -Werror
+CFLAGS = -Wall -Wextra -Werror
 
 HEADERS = libft.h
 
@@ -40,9 +40,9 @@ clean:
 fclean : clean 
 	rm -f $(NAME)
 
-re : fclean $(NAME)
+re: fclean $(NAME)
 
-norme : 
+norm: 
 	@norminette -R CheckDefine $(HEADERS)
 	@norminette -R CheckForbidden $(SRCS)
 
