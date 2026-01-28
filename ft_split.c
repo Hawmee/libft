@@ -6,15 +6,33 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 15:20:36 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/26 15:24:41 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/28 10:58:56 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 #include <stdio.h>
 
-static int	ft_count_word(char const *s, char c)
+static size_t	ft_len_word(char const *s, char c)
+{
+	int	i;
+	int	j;
+
+	i = 0;
+	while (s[i])
+	{
+		j = 0;
+		while (s[i + j] && s[i + j] != c )
+			j ++;
+		if (!j)
+			i ++;
+		else
+			return ((size_t)j);
+	}
+	return (0);
+}
+
+static int	ft_word_count(char const *s, char c)
 {
 	size_t	i;
 	size_t	j;
@@ -27,35 +45,17 @@ static int	ft_count_word(char const *s, char c)
 		j = 0;
 		while (s[i + j] != c && s[i + j])
 			j ++;
-		if (j)
-		{
+		if (!j)
+			i ++;
+		else{
 			count ++;
 			i = i + j;
 		}
-		i ++;
 	}
 	return (count);
 }
 
-static int	ft_len_word(char const *s, char c)
-{
-	int	i;
-	int	j;
-
-	i = 0;
-	while (*(s + i))
-	{
-		j = 0;
-		while (*(s + i + j) != c && *(s + i + j))
-			j ++;
-		if (j)
-			return (j);
-		i ++;
-	}
-	return (j);
-}
-
-static char	**ft_free(char **splited)
+static void	ft_free(char **splited)
 {
 	size_t	i;
 
@@ -66,7 +66,6 @@ static char	**ft_free(char **splited)
 		i ++;
 	}
 	free(splited);
-	return (NULL);
 }
 
 char	**ft_split(char const *s, char c)
@@ -77,23 +76,20 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	res = (char **)ft_calloc ((ft_count_word(s, c) + 1), sizeof(char *));
+	res = (char **)ft_calloc ((ft_word_count(s, c) + 1), sizeof(char *));
 	if (!res)
 		return (NULL);
 	i = 0;
 	j = 0;
-	while (*(s + i))
+	while ((int)i < ft_word_count(s, c))
 	{
-		if (*(s + i) != c)
-		{
-			res[j] = ft_substr(s, i, (size_t)ft_len_word(s + i, c));
-			if (!*(res + j))
-				return (ft_free(res));
-			j++;
-			i = i + (size_t)ft_len_word(s + i, c);
-		}
-		i++;
+		while(s[j] && s[j] == c)
+			j ++;
+		res[i] = ft_substr(s, j, ft_len_word(&s[j], c));
+		if (!res[i])
+			ft_free(res);
+		j = j + ft_len_word(&s[j], c) + 1;
+		i ++;
 	}
-	res[j] = NULL;
 	return (res);
 }

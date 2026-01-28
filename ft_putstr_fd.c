@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/24 09:17:53 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/24 10:23:18 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/27 21:17:46 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,11 @@ void	ft_putstr_fd(char *s, int fd)
 	size_t	i;
 
 	i = 0;
+	if (!s)
+		return ;
 	while (i < ft_strlen(s))
 	{
-		write(fd, &s[i], 0);
+		write(fd, &s[i], 1);
 		i ++;
 	}
 }

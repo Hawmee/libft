@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 08:05:22 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/27 03:30:13 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/27 21:25:40 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_lstsize(t_list *lst)
 	size = 0;
 	while (tmp)
 	{
-		lst = lst->next;
+		tmp = tmp->next;
 		size ++;
 	}
 	return (size);

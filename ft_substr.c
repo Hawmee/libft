@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 15:41:48 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/26 18:48:37 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/28 07:51:03 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (NULL);
-	sb = (char *)malloc (sizeof(char) * (len + 1));
+	if ((size_t)start >= ft_strlen(s))
+		return (ft_strdup(""));
+	if (len > ft_strlen(s) - (size_t)start)
+		len = ft_strlen(s) - (size_t)start;
+	sb = (char *)ft_calloc (sizeof(char), (len + 1));
 	if (!sb)
 		return (NULL);
 	i = 0;
@@ -29,7 +33,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		*(sb + i) = (char)(*((char *)(s + (int)start + (int)i)));
 		i ++;
 	}
-	sb[i] = '\0';
+	// sb[len] = '\0';
 	return (sb);
 }
 

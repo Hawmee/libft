@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 12:34:16 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/27 03:29:27 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/28 16:56:40 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,12 @@ int	ft_atoi(const char *nptr)
 	nbr = 0 ;
 	if (!nptr)
 		return (0);
-	while (*(nptr + i) == 32 || (*(nptr + i) >= 9 && *(nptr + i) <= 13))
-	{
+	while (nptr[i] == 32 || (nptr[i] >= 9 && nptr[i] <= 13))
 		i ++;
-	}
-	if (*(nptr + i) == '-')
+	if (nptr[i] == '-' || nptr[i] == '+')
 	{
-		sign = -sign;
+		if (nptr[i] == '-')
+			sign = -sign;
 		i ++ ;
 	}
 	while (ft_isdigit(*(nptr + i)))
@@ -39,12 +38,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (sign * nbr);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-
-// int main (void)
-// {
-// 	printf("%i" , atoi("       -12a332"));	
-// 	return (0);
-// }
