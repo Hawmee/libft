@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 15:20:36 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/28 16:10:03 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/30 11:04:18 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,9 +61,9 @@ static void	ft_free(char **splited)
 	size_t	i;
 
 	i = 0;
-	while (*(splited + i))
+	while (splited[i])
 	{
-		free(*(splited + i));
+		free(splited[i]);
 		i ++;
 	}
 	free(splited);
@@ -88,7 +88,10 @@ char	**ft_split(char const *s, char c)
 			j ++;
 		res[i] = ft_substr(s, j, ft_len_word(&s[j], c));
 		if (!res[i])
+		{
 			ft_free(res);
+			return (NULL);
+		}
 		j = j + ft_len_word(&s[j], c) + 1;
 		i ++;
 	}

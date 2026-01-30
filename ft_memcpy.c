@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 08:19:18 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/28 13:18:10 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/29 15:39:46 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		*(d + i) = *((unsigned char *)src + i);
+		d[i] = ((unsigned char *)src)[i];
 		i ++;
 	}
 	return (dest);
