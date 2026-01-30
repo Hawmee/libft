@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 15:20:36 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/30 11:04:18 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/30 17:25:13 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 static size_t	ft_len_word(char const *s, char c)
 {
-	int	i;
-	int	j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	while (s[i])
@@ -27,7 +27,7 @@ static size_t	ft_len_word(char const *s, char c)
 		if (!j)
 			i ++;
 		else
-			return ((size_t)j);
+			return (j);
 	}
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 08:46:52 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/28 15:45:59 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/30 17:38:51 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	ft_memmove(res, s1, ft_strlen(s1));
 	ft_memmove((res + ft_strlen(s1)), s2, ft_strlen(s2));
-	*(res + res_len) = '\0';
+	res[res_len] = '\0';
 	return (res);
 }

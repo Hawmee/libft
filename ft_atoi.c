@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 12:34:16 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/28 16:56:40 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/30 17:21:03 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ int	ft_atoi(const char *nptr)
 			sign = -sign;
 		i ++ ;
 	}
-	while (ft_isdigit(*(nptr + i)))
+	while (ft_isdigit(nptr[i]))
 	{
-		nbr = nbr * 10 + (*(nptr + i) - '0');
+		nbr = nbr * 10 + (nptr[i] - '0');
 		i ++;
 	}
 	return (sign * nbr);

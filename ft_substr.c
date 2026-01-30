@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 15:41:48 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/28 16:05:53 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/30 18:11:24 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	if ((size_t)start >= ft_strlen(s))
-		return (ft_strdup(""));
+	{
+		sb = ft_strdup("");
+		return (sb);
+	}
 	if (len > ft_strlen(s) - (size_t)start)
 		len = ft_strlen(s) - (size_t)start;
 	sb = (char *)ft_calloc (sizeof(char), (len + 1));
@@ -30,7 +33,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	i = 0;
 	while (i < len && s[(int)start + (int)i])
 	{
-		*(sb + i) = (char)(*((char *)(s + (int)start + (int)i)));
+		*(sb + i) = (char)(((char *)s)[(size_t)start + i]);
 		i ++;
 	}
 	return (sb);

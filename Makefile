@@ -6,12 +6,11 @@
 #    By: varandri <varandri@student.42antananari    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/26 16:13:49 by varandri          #+#    #+#              #
-#    Updated: 2026/01/28 16:13:57 by varandri         ###   ########.fr        #
+#    Updated: 2026/01/30 18:20:06 by varandri         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-EXEC = a.out
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
@@ -41,9 +40,5 @@ fclean : clean
 	rm -f $(NAME)
 
 re: fclean $(NAME)
-
-norm: 
-	@norminette -R CheckDefine $(HEADERS)
-	@norminette -R CheckForbidden $(SRCS)
 
 .PHONY:  all clean fclean re

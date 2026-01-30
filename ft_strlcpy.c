@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 08:20:02 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/30 11:26:35 by varandri         ###   ########.fr       */
+/*   Updated: 2026/01/30 18:01:04 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,11 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	size_t	i;
 	size_t	src_len;
 
-	if (!size)
-		return (ft_strlen(src));
 	src_len = ft_strlen(src);
+	if (!src)
+		return (0);
+	if (!size)
+		return (src_len);
 	i = 0;
 	while (i < (size - 1))
 	{
@@ -28,6 +30,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		dst[i] = src[i];
 		i ++;
 	}
-	*(dst + i) = '\0';
+	dst[i] = '\0';
 	return (src_len);
 }
