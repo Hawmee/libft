@@ -46,8 +46,11 @@ cc -Wall -Wextra -Werror program.c libft.a
 In order to finish this project , the following platform was used to read about some functions and their behavior and test them as well:
 + [GeeksforGeek](https://www.geeksforgeeks.org/c/c-programming-language/)
 + [w3school](https://www.w3schools.com/)
-+ [OneCompiler](https://onecompiler.com/c)
++ [OneCompiler](https://onecompiler.com/c) (for testing functions)
 + C manual (**man** Command)
++ [MakeFIle Tutorial](https://makefiletutorial.com/) (to learn how to make a makefile)
++ [MarkDown Guide](https://www.markdownguide.org/getting-started/) (to learn hiw to use md to make the README)
++ [Youtube](https://www.youtube.com/) (for tutorials)
 
 ## Examples
 
