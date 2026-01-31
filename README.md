@@ -49,7 +49,7 @@ In order to finish this project , the following platform was used to read about 
 + [OneCompiler](https://onecompiler.com/c) (for testing functions)
 + C manual (**man** Command)
 + [MakeFIle Tutorial](https://makefiletutorial.com/) (to learn how to make a makefile)
-+ [MarkDown Guide](https://www.markdownguide.org/getting-started/) (to learn hiw to use md to make the README)
++ [MarkDown Guide](https://www.markdownguide.org/getting-started/) (to learn how to use md to make the README)
 + [Youtube](https://www.youtube.com/) (for tutorials)
 
 ## Examples
