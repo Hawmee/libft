@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 09:59:48 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/30 17:57:31 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/01 13:58:07 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,9 +40,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 		i ++;
 	while (j > i && set && is_set(s1[j - 1], (char *)set))
 		j --;
-	res = (char *)ft_calloc (((j - i) + 1), (int) sizeof(char));
+	res = ft_substr(s1, i, (j - i));
 	if (!res)
 		return (NULL);
-	ft_memmove((char *)res, (char *)(s1 + i), (j - i));
 	return ((char *)res);
 }
