@@ -162,7 +162,7 @@ char	*ft_strdup(const char *s)
 	return (dup);
 }
 ```
-### Example of use the the library
+### Example of the library usage
 Here is an example of the main useage of one of the functions from the library .
 ```c
 /* ************************************************************************** */
