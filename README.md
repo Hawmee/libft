@@ -48,7 +48,7 @@ In order to finish this project , the following platform was used to read about 
 + [claudeAI](https://claude.ai/) (for helping to make README)
 
 # Details
-Libft.c is a library that contains functions that are mainly used to help when encountering string manipulations , linked list manipulations , characters manipulations and for arrays manipulations.
+libft.a is a library that contains functions that are mainly used to help when encountering string manipulations , linked list manipulations , characters manipulations and for arrays manipulations.
 
 ## Functions inside libft
 Here are the functions inside libft .
@@ -187,5 +187,5 @@ int	main(void)
 To use the static library in a program , include it during compilation. Example:
 
 ```c
-cc -Wall -Wextra -Werror program.c libft.a
+cc -Wall -Wextra -Werror main.c libft.a
 ```
