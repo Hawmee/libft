@@ -1,12 +1,14 @@
-_This project has been created as part of the 42 curriculum by ***Varandri***_.
+_This project has been created as part of the 42 curriculum by Varandri_.
 
 # Description
-Libft is a project that involves creating a static library in C.  
-It reimplements standard libc functions and provides additional utility functions for:
 
-- String manipulation  
-- Memory management  
-- Linked list operations  
+Libft is a foundational project at 42 that involves creating a custom C library containing reimplementations of standard C library functions, along with additional utility functions. This library serves as a personal toolkit that will be used throughout the 42 curriculum for future C projects.
+
+The project is divided into three main parts:
+- **Part 1**: Reimplementation of standard libc functions (string manipulation, memory management, character checks, etc.)
+- **Part 2**: Additional utility functions not present in libc or with different implementations
+- **Part 3**: Linked list manipulation functions
+ 
 
 # Instructions
 
@@ -43,85 +45,71 @@ In order to finish this project , the following platform was used to read about 
 + [MakeFIle Tutorial](https://makefiletutorial.com/) (to learn how to make a makefile)
 + [MarkDown Guide](https://www.markdownguide.org/getting-started/) (to learn how to use md to make the README)
 + [Youtube](https://www.youtube.com/) (for tutorials)
-+ [ChatGPT](https://chatgpt.com/) (for learning how to make README)
++ [claudeAI](https://claude.ai/) (for helping to make README)
 
 # Details
-Libft is a library that contains functions that are mainly used to help when encountering string manipulations , linked list manipulations , characters manipulations and for arrays manipulations.
+Libft.c is a library that contains functions that are mainly used to help when encountering string manipulations , linked list manipulations , characters manipulations and for arrays manipulations.
 
 ## Functions inside libft
 Here are the functions inside libft .
-```c
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/20 08:20:25 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/27 13:36:47 by varandri         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+### Part 1 - Libc Functions
 
-#ifndef LIBFT_H
-# define LIBFT_H
+**Character checks:**
+- `ft_isalpha` - Check if character is alphabetic
+- `ft_isdigit` - Check if character is a digit
+- `ft_isalnum` - Check if character is alphanumeric
+- `ft_isascii` - Check if character is ASCII
+- `ft_isprint` - Check if character is printable
 
-# include <stdlib.h>
-# include <unistd.h>
-# include <stdint.h>
+**String functions:**
+- `ft_strlen` - Calculate string length
+- `ft_strlcpy` - Copy string with size limit
+- `ft_strlcat` - Concatenate strings with size limit
+- `ft_strchr` - Locate first occurrence of character
+- `ft_strrchr` - Locate last occurrence of character
+- `ft_strncmp` - Compare strings up to n characters
+- `ft_strnstr` - Locate substring in string
+- `ft_strdup` - Duplicate string
 
-typedef struct s_list
-{
-	void			*content;
-	struct s_list	*next;
-}					t_list;
+**Memory functions:**
+- `ft_memset` - Fill memory with constant byte
+- `ft_bzero` - Zero out memory
+- `ft_memcpy` - Copy memory area
+- `ft_memmove` - Copy memory area (handles overlaps)
+- `ft_memchr` - Scan memory for character
+- `ft_memcmp` - Compare memory areas
+- `ft_calloc` - Allocate and zero memory
 
-int		ft_isalpha(int c);
-int		ft_isdigit(int n);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-size_t	ft_strlen(const char *s);
-void	*ft_memset(void *str, int c, size_t n);
-void	ft_bzero(void *s, size_t n);
-void	*ft_memcpy(void *dest, const void *src, size_t n);
-void	*ft_memmove(void *dest, const void *src, size_t n);
-size_t	ft_strlcpy(char *dst, const char *src, size_t size);
-size_t	ft_strlcat(char *dst, const char *src, size_t size);
-int		ft_toupper(int c);
-int		ft_tolower(int c);
-char	*ft_strchr(const char *s, int c);
-char	*ft_strrchr(const char *s, int c);
-int		ft_strncmp(const char *s1, const char *s2, size_t n);
-void	*ft_memchr(const void *s, int c, size_t n);
-int		ft_memcmp(const void *s1, const void *s2, size_t n);
-char	*ft_strnstr(const char *big, const char *little, size_t len);
-int		ft_atoi(const char *nptr);
-char	*ft_strdup(const char *s);
-void	*ft_calloc(size_t nmemb, size_t size);
-char	*ft_substr(char const *s, unsigned int start, size_t len);
-char	*ft_strjoin(char const *s1, char const *s2);
-char	*ft_strtrim(char const *s1, char const *set);
-char	**ft_split(char const *s, char c);
-char	*ft_itoa(int n);
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-void	ft_striteri(char *s, void (*f)(unsigned int, char*));
-void	ft_putchar_fd(char c, int fd);
-void	ft_putstr_fd(char *s, int fd);
-void	ft_putendl_fd(char *s, int fd);
-void	ft_putnbr_fd(int n, int fd);
-t_list	*ft_lstnew(void *content);
-void	ft_lstadd_front(t_list **lst, t_list *new);
-int		ft_lstsize(t_list *lst);
-t_list	*ft_lstlast(t_list *lst);
-void	ft_lstadd_back(t_list **lst, t_list *new);
-void	ft_lstdelone(t_list *lst, void (*del)(void *));
-void	ft_lstclear(t_list **lst, void (*del)(void *));
-void	ft_lstiter(t_list *lst, void (*f)(void *));
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+**Conversion functions:**
+- `ft_atoi` - Convert string to integer
+- `ft_toupper` - Convert character to uppercase
+- `ft_tolower` - Convert character to lowercase
 
-#endif
-```
+### Part 2 - Additional Functions
+
+- `ft_substr` - Extract substring from string
+- `ft_strjoin` - Concatenate two strings into new string
+- `ft_strtrim` - Trim characters from beginning and end
+- `ft_split` - Split string into array by delimiter
+- `ft_itoa` - Convert integer to string
+- `ft_strmapi` - Apply function to each character with index
+- `ft_striteri` - Iterate string and apply function
+- `ft_putchar_fd` - Output character to file descriptor
+- `ft_putstr_fd` - Output string to file descriptor
+- `ft_putendl_fd` - Output string with newline to file descriptor
+- `ft_putnbr_fd` - Output integer to file descriptor
+
+### Part 3 - Linked List Functions
+
+- `ft_lstnew` - Create new list node
+- `ft_lstadd_front` - Add node at beginning of list
+- `ft_lstadd_back` - Add node at end of list
+- `ft_lstsize` - Count nodes in list
+- `ft_lstlast` - Get last node of list
+- `ft_lstdelone` - Delete single node
+- `ft_lstclear` - Delete and free entire list
+- `ft_lstiter` - Iterate list and apply function
+- `ft_lstmap` - Create new list by applying function to each node
 
 ## Examples
 ### Function implementation
@@ -162,8 +150,8 @@ char	*ft_strdup(const char *s)
 	return (dup);
 }
 ```
-### Example of the library usage
-Below is an example of the main useage of one of the functions from the library .
+### Example of usage of the library
+Here is an example of the main useage of one of the functions from the library .
 ```c
 /* ************************************************************************** */
 /*                                                                            */

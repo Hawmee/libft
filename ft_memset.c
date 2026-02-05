@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 08:19:42 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/29 16:06:05 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/05 15:54:16 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ void	*ft_memset(void *str, int c, size_t n)
 {
 	unsigned char	*ptr;
 
-	if (!str)
-		return (NULL);
 	ptr = (unsigned char *)str;
 	while (n)
 	{

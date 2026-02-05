@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 15:45:33 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/29 15:31:39 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/05 20:05:42 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,12 @@ static int	ft_int_len(long n)
 	int	i;
 
 	i = 0;
-	if (n <= 0)
+	if (!n)
+		i ++;
+	if (n < 0)
 	{
-		i = i + 1;
 		n = -n;
+		i ++;
 	}
 	while (n)
 	{
@@ -35,7 +37,7 @@ static void	ft_convert(long n, char *str, int int_len)
 	int	i;
 
 	i = 0;
-	if (n == 0)
+	if (!n)
 		str[i] = '0';
 	while (n)
 	{

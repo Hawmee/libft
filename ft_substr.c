@@ -6,12 +6,11 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 15:41:48 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/30 18:11:24 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/04 09:38:44 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -33,7 +32,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	i = 0;
 	while (i < len && s[(int)start + (int)i])
 	{
-		*(sb + i) = (char)(((char *)s)[(size_t)start + i]);
+		*(sb + i) = (char)(s[(size_t)start + i]);
 		i ++;
 	}
 	return (sb);

@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/24 09:36:11 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/28 06:34:54 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/05 20:15:57 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putnbr_fd(int n, int fd)
 {
 	char	c;
 
+	if (fd < 0)
+		return ;
 	c = 0;
 	if (n == -2147483648)
 	{

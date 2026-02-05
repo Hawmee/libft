@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 14:10:47 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/27 03:29:38 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/05 15:54:39 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	if (!s)
-		return ;
 	ft_memset((unsigned char *)s, 0, n);
 }

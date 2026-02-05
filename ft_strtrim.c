@@ -6,20 +6,20 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 09:59:48 by varandri          #+#    #+#             */
-/*   Updated: 2026/02/01 13:58:07 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/05 21:01:24 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	is_set(int c, char *set)
+static int	is_set(char c, char *set)
 {
 	size_t	i;
 
 	i = 0;
 	while (set[i])
 	{
-		if ((int)set[i] == c)
+		if (set[i] == c)
 			return (1);
 		i++;
 	}

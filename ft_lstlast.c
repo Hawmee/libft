@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 08:10:10 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/28 06:47:43 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/04 09:00:42 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ t_list	*ft_lstlast(t_list *lst)
 
 	last = lst;
 	while (last && last->next)
-	{
 		last = last->next;
-	}
 	return (last);
 }
