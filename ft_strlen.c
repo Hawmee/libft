@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 08:20:07 by varandri          #+#    #+#             */
-/*   Updated: 2026/02/05 18:19:58 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/06 04:50:55 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ size_t	ft_strlen(const char *s)
 
 	i = 0;
 	while (s[i])
-	{
 		i ++;
-	}
 	return (i);
 }
