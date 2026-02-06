@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 08:20:02 by varandri          #+#    #+#             */
-/*   Updated: 2026/02/05 15:58:12 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/06 07:41:09 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	if (!size)
 		return (src_len);
 	i = 0;
-	while (src && i < (size - 1))
+	while (i < (size - 1))
 	{
 		if (!src[i])
 			break ;

@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 15:41:48 by varandri          #+#    #+#             */
-/*   Updated: 2026/02/04 09:38:44 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/06 07:43:55 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	i = 0;
 	while (i < len && s[(int)start + (int)i])
 	{
-		*(sb + i) = (char)(s[(size_t)start + i]);
+		sb[i] = (char)(s[(size_t)start + i]);
 		i ++;
 	}
 	return (sb);
