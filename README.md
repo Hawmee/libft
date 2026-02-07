@@ -38,14 +38,14 @@ make re
 
 # Resources
 In order to finish this project , the following platform was used to read about some functions and their behavior and test them as well:
-+ [GeeksforGeek](https://www.geeksforgeeks.org/c/c-programming-language/)
-+ [w3school](https://www.w3schools.com/)
-+ [OneCompiler](https://onecompiler.com/c) (for testing functions)
-+ The Manual (**man** Command)
-+ [MakeFIle Tutorial](https://makefiletutorial.com/) (to learn how to make a makefile)
-+ [MarkDown Guide](https://www.markdownguide.org/getting-started/) (to learn how to use md to make the README)
-+ [Youtube](https://www.youtube.com/) (for tutorials)
-+ [claudeAI](https://claude.ai/) (for helping to make README)
++ [GeeksforGeek](https://www.geeksforgeeks.org/c/c-programming-language/) - for documentations.
++ [w3school](https://www.w3schools.com/) - for documentations.
++ [OneCompiler](https://onecompiler.com/c) - for testing functions online.
++ The Manual (**man** Command) - for documentations.
++ [MakeFIle Tutorial](https://makefiletutorial.com/) - for learning how to make a makefile.
++ [MarkDown Guide](https://www.markdownguide.org/getting-started/) - to learn how to use md to make the README.
++ [Youtube](https://www.youtube.com/) - for tutorials.
++ [claudeAI](https://claude.ai/) - for helping to make README and create some test cases.
 
 # Details
 libft.a is a library that contains functions that are mainly used to help when encountering string manipulations , linked list manipulations , characters manipulations and for arrays manipulations.

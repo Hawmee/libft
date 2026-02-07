@@ -6,15 +6,13 @@
 #    By: varandri <varandri@student.42antananari    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/26 16:13:49 by varandri          #+#    #+#              #
-#    Updated: 2026/02/04 09:42:06 by varandri         ###   ########.fr        #
+#    Updated: 2026/02/07 16:47:44 by varandri         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-
-HEADERS = libft.h
 
 SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 		ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
@@ -30,7 +28,7 @@ OBJ = $(SRCS:.c=.o)
 
 all : $(NAME)
 
-$(NAME) : $(OBJ) $(HEADERS)
+$(NAME) : $(OBJ)
 	ar -rcs $(NAME) $(OBJ)
 
 clean:
