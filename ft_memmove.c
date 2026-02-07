@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 08:19:28 by varandri          #+#    #+#             */
-/*   Updated: 2026/02/05 15:55:28 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/07 10:38:24 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
-	if (d < s)
+	if (d <= s)
 		ft_memcpy(d, s, n);
 	else
 	{

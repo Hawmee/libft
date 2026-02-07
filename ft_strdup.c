@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 12:55:18 by varandri          #+#    #+#             */
-/*   Updated: 2026/02/05 19:56:09 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/07 11:05:59 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strdup(const char *s)
 		return (NULL);
 	while (s[i])
 	{
-		dup[i] = ((char *)s)[i];
+		dup[i] = s[i];
 		i ++;
 	}
 	dup[i] = '\0';

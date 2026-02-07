@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/24 07:30:16 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/28 17:36:39 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/07 12:19:52 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!res)
 		return (NULL);
 	i = 0;
-	while (i < ft_strlen(s))
+	while (s[i])
 	{
 		res[i] = f((unsigned int)i, s[i]);
 		i ++;
