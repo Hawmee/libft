@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 14:18:25 by varandri          #+#    #+#             */
-/*   Updated: 2026/02/07 23:31:21 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/08 00:08:15 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	unsigned char	*str;
-	int			i;
+	int				i;
 
 	str = (unsigned char *)s;
 	i = (int)ft_strlen(s);
