@@ -6,15 +6,15 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 08:18:59 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/28 15:59:04 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/07 23:38:25 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int n)
+int	ft_isdigit(int c)
 {
-	if (n >= '0' && n <= '9')
+	if (c >= '0' && c <= '9')
 		return (1);
 	else
 		return (0);

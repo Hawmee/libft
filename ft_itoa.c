@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 15:45:33 by varandri          #+#    #+#             */
-/*   Updated: 2026/02/05 20:05:42 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/07 21:03:47 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,18 +34,14 @@ static int	ft_int_len(long n)
 
 static void	ft_convert(long n, char *str, int int_len)
 {
-	int	i;
-
-	i = 0;
 	if (!n)
-		str[i] = '0';
+		str[0] = '0';
 	while (n)
 	{
-		str[(int_len - 1) - i] = (n % 10) + '0';
+		str[(int_len - 1)] = (n % 10) + '0';
 		n = n / 10;
-		i ++;
+		int_len --;
 	}
-	str[int_len] = '\0';
 }
 
 char	*ft_itoa(int n)
@@ -56,7 +52,7 @@ char	*ft_itoa(int n)
 
 	nbr = (long)n;
 	int_len = ft_int_len(nbr);
-	str = (char *)malloc (sizeof(char) * (int_len + 1));
+	str = (char *)ft_calloc((int_len + 1), sizeof(char));
 	if (!str)
 		return (NULL);
 	if (nbr < 0)

@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 08:20:25 by varandri          #+#    #+#             */
-/*   Updated: 2026/02/05 16:32:16 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/07 23:38:30 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ typedef struct s_list
 }					t_list;
 
 int		ft_isalpha(int c);
-int		ft_isdigit(int n);
+int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);

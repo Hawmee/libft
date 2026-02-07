@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 15:20:36 by varandri          #+#    #+#             */
-/*   Updated: 2026/02/07 11:21:43 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/07 22:53:35 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ static size_t	ft_word_count(char const *s, char c)
 	while (s[i])
 	{
 		j = 0;
-		while (s[i + j] != c && s[i + j])
+		while (s[i + j] && s[i + j] != c)
 			j ++;
 		if (!j)
 			i ++;
@@ -91,7 +91,7 @@ char	**ft_split(char const *s, char c)
 			ft_free(res);
 			return (NULL);
 		}
-		j = j + ft_len_word(&s[j], c) + 1;
+		j = j + ft_len_word(&s[j], c);
 		i ++;
 	}
 	return (res);
