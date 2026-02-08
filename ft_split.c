@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 15:20:36 by varandri          #+#    #+#             */
-/*   Updated: 2026/02/07 22:53:35 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/08 20:10:11 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,9 @@ static size_t	ft_len_word(char const *s, char c)
 		j = 0;
 		while (s[i + j] && s[i + j] != c)
 			j ++;
-		if (!j)
-			i ++;
-		else
+		if (j)
 			return (j);
+		i ++;
 	}
 	return (0);
 }
