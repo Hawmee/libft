@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 16:36:49 by varandri          #+#    #+#             */
-/*   Updated: 2026/01/27 15:19:15 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/08 10:31:39 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,17 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*node;
 	t_list	*list;
+	void	*content;
 
 	if (!lst || !f || !del)
 		return (NULL);
 	node = NULL;
 	list = NULL;
+	content = NULL;
 	while (lst)
 	{
-		node = ft_lstnew(f(lst->content));
+		content = f(lst->content);
+		node = ft_lstnew(content);
 		if (!node)
 		{
 			ft_lstclear(&list, del);
