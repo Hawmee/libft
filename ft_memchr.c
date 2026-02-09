@@ -6,7 +6,7 @@
 /*   By: varandri <varandri@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 15:48:58 by varandri          #+#    #+#             */
-/*   Updated: 2026/02/05 17:19:54 by varandri         ###   ########.fr       */
+/*   Updated: 2026/02/09 09:55:19 by varandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (str[i] == (unsigned char)c)
-			return ((str + i));
+			return ((void *)(str + i));
 		i ++;
 	}
 	return (NULL);
